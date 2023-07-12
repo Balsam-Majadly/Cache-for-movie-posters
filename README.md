@@ -1,10 +1,68 @@
-film catching application
 
-Service that enables programmatic access via the internet to a database of images (movie posters). The database is based on MongoDB and stores movie files and information about the files (movie title, IMDB code, etc.). The software is based on Flask. Both the software and the database should be "wrapped in containers",we used docker-compose.
+# A cache for movie poster- Dockerized Flask Mongo App Project
 
-The software should implement the following options as a web API:
+This project demonstrates how to containerize a Flask web application with a MongoDB database using Docker. It provides a basic setup for running a Flask app with MongoDB in a Docker environment.This app project enables programmatic access via the internet to a database of images (movie posters). The database is based on MongoDB and stores movie files and information about the files (movie title, IMDB code, etc.). The software is based on Flask. Both the software and the database should be "wrapped in containers",we used docker-compose.
 
-Search for a poster in the database (returns an image file). If the poster is not found in the database, the search should be redirected to TMDB.
-Delete a poster from the database.
-Update information about a poster.
-Additionally, the software should allow searching using an HTML form accessible through a web browser.
+## Features
+
+- Dockerized Flask web application
+- Integration with MongoDB database
+- Docker Compose for easy container orchestration
+- Basic user authentication and CRUD operations
+- API endpoints for interacting with the database
+
+## Prerequisites
+
+Make sure you have the following prerequisites installed on your machine:
+
+- Docker: [Install Docker](https://docs.docker.com/get-docker/)
+- Docker Compose: [Install Docker Compose](https://docs.docker.com/compose/install/)
+
+## Getting Started
+
+To get started with this project, follow these steps to run this app in your local environment:
+
+1. Clone the repository:
+
+
+git clone https://github.com/Balsam-Majadly/film.git
+
+
+2. Change to the project directory:
+
+
+cd film
+
+3. make api key https://www.themoviedb.org/login
+4. create a file, and add your api key
+  echo "api_key = 'your api key'" > config.py
+5. Build and start the Docker containers:
+
+
+docker-compose up -d
+
+
+4. Open your web browser and access the application at `http://localhost:5000`.
+
+or you can run this app in your ec2 instance:
+
+1.create ec2 
+
+2.make sure to add inbound rules to allow incoming traffic on ports 5000 and 8081 in a security group associated with your EC2 instance
+
+3.make sure to add user data, you can copy from this https://github.com/Balsam-Majadly/film/blob/main/user_data.txt
+
+
+
+
+## Contributing
+
+Contributions are welcome! If you find any issues or have suggestions for improvement, please feel free to open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+
+
+Please note that the generated README file is a starting point and you may need to customize it further based on your specific requirements and project details.
