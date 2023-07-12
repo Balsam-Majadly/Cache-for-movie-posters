@@ -25,18 +25,21 @@ To get started with this project, follow these steps to run this app in your loc
 1. Clone the repository:
 
 
-git clone https://github.com/Balsam-Majadly/film.git
+git clone https://github.com/Balsam-Majadly/Cache-for-movie-posters.git
 
 
 2. Change to the project directory:
 
 
-cd film
+cd Cache-for-movie-posters/
 
 3. make api key https://www.themoviedb.org/login
-4. create a file, and add your api key
+   
+5. create a file, and add your api key
+   
   echo "api_key = 'your api key'" > config.py
-5. Build and start the Docker containers:
+  
+7. Build and start the Docker containers:
 
 
 docker-compose up -d
@@ -50,7 +53,8 @@ or you can run this app in your ec2 instance:
 
 2.make sure to add inbound rules to allow incoming traffic on ports 5000 and 8081 in a security group associated with your EC2 instance
 
-3.make sure to add user data, you can copy from this https://github.com/Balsam-Majadly/film/blob/main/user_data.txt
+3.make sure to add user data, you can copy from this link
+https://github.com/Balsam-Majadly/Cache-for-movie-posters/blob/main/user_data.txt
 
 
 
