@@ -59,14 +59,4 @@ https://github.com/Balsam-Majadly/Cache-for-movie-posters/blob/main/user_data.tx
 
 
 
-## Contributing
-
-Contributions are welcome! If you find any issues or have suggestions for improvement, please feel free to open an issue or submit a pull request.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
-
-
-Please note that the generated README file is a starting point and you may need to customize it further based on your specific requirements and project details.
+.
